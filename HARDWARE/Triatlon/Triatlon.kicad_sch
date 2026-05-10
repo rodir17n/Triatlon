@@ -956,6 +956,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4148WT"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148WT"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-523"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?523*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148WT_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148WT_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "EESTN5:ESP32_DEVKITC"
 			(pin_names
 				(offset 0.0254)
@@ -2939,16 +3106,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 87.63) (xy 76.2 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "177adab5-bd1a-4903-bbe5-39b7744190c3")
-	)
-	(wire
-		(pts
 			(xy 90.17 38.1) (xy 90.17 39.37)
 		)
 		(stroke
@@ -2966,6 +3123,16 @@
 			(type default)
 		)
 		(uuid "1e721a32-49d4-42dc-a975-570dc4c07fd2")
+	)
+	(wire
+		(pts
+			(xy 114.3 67.31) (xy 119.38 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21836495-aa2c-4f0e-997b-b6b33a1285d0")
 	)
 	(wire
 		(pts
@@ -3026,6 +3193,16 @@
 			(type default)
 		)
 		(uuid "2e974fe9-5c0c-4ef5-ad6e-7a59fe38d70a")
+	)
+	(wire
+		(pts
+			(xy 86.36 100.33) (xy 83.82 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fa141e8-254a-4c34-9a9f-692e0b467bf1")
 	)
 	(wire
 		(pts
@@ -3139,6 +3316,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 100.33) (xy 83.82 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56d5bf24-3d5c-4ec0-a81f-6921a854842c")
+	)
+	(wire
+		(pts
 			(xy 29.21 57.15) (xy 34.29 57.15)
 		)
 		(stroke
@@ -3209,6 +3396,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 54.61) (xy 118.11 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8212491c-cd4a-4303-b81d-64f113e6f147")
+	)
+	(wire
+		(pts
 			(xy 20.32 170.18) (xy 22.86 170.18)
 		)
 		(stroke
@@ -3216,6 +3413,16 @@
 			(type default)
 		)
 		(uuid "859039d2-03df-44fe-8a09-a553eca91445")
+	)
+	(wire
+		(pts
+			(xy 127 121.92) (xy 127 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b388ed-df7e-4188-b59c-8439f62d6186")
 	)
 	(wire
 		(pts
@@ -3239,16 +3446,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 100.33) (xy 86.36 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93ea66d9-a85b-49d9-aad8-515686e37dec")
-	)
-	(wire
-		(pts
 			(xy 50.8 105.41) (xy 50.8 107.95)
 		)
 		(stroke
@@ -3256,6 +3453,16 @@
 			(type default)
 		)
 		(uuid "976b2321-e917-4737-aca3-33f33f1e3cf9")
+	)
+	(wire
+		(pts
+			(xy 115.57 121.92) (xy 127 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9805468e-5fce-499f-a467-205fcbfb8b70")
 	)
 	(wire
 		(pts
@@ -3339,16 +3546,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 87.63) (xy 76.2 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b17a6013-da68-417f-b48f-2aaababa5fd4")
-	)
-	(wire
-		(pts
 			(xy 29.21 33.02) (xy 34.29 33.02)
 		)
 		(stroke
@@ -3389,6 +3586,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 85.09) (xy 86.36 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cadf8f50-443d-4c69-beeb-265e4afffc5b")
+	)
+	(wire
+		(pts
 			(xy 87.63 38.1) (xy 90.17 38.1)
 		)
 		(stroke
@@ -3396,6 +3603,16 @@
 			(type default)
 		)
 		(uuid "cb0effc3-9c45-45ca-abb8-5713169659f2")
+	)
+	(wire
+		(pts
+			(xy 115.57 111.76) (xy 115.57 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc32481d-834f-4e7d-b878-a2846ea4e53c")
 	)
 	(wire
 		(pts
@@ -3456,6 +3673,16 @@
 			(type default)
 		)
 		(uuid "ea335000-4563-4637-9940-63088f6fb7e9")
+	)
+	(wire
+		(pts
+			(xy 119.38 111.76) (xy 115.57 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef52a37a-20c3-4167-a819-d2862b55d9d0")
 	)
 	(wire
 		(pts
@@ -3587,6 +3814,29 @@
 		(uuid "1184a42b-3a9d-4ac0-bd4c-e181b1d90a1e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 135.6263 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LPWM2"
+		(shape input)
+		(at 86.36 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "1330539d-691d-42b6-9e8f-710df7bd6ad3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 76.9644 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3779,6 +4029,52 @@
 			)
 		)
 	)
+	(global_label "RPWM2"
+		(shape input)
+		(at 86.36 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "c7f53dd0-133a-4bfb-88e6-6e8bd8c0a724")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 76.7225 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RPWM1"
+		(shape input)
+		(at 86.36 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "cb8ec7fe-4adc-4ae7-b20d-ee6572a1f375")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 76.7225 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LPWM1"
 		(shape input)
 		(at 73.66 166.37 0)
@@ -3798,6 +4094,29 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LPWM1"
+		(shape input)
+		(at 86.36 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "d4e1765c-86d0-4e2a-beba-ba8d433fe2f0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 76.9644 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4074,6 +4393,72 @@
 			(project "Triatlon"
 				(path "/d5286d43-c99d-4180-b950-0ade1916cf03"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04c6d562-76f2-4c59-9c6d-352dad4d27f2")
+		(property "Reference" "#PWR012"
+			(at 83.82 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb15357f-fd2b-4e77-9320-3ae98a4722aa")
+		)
+		(instances
+			(project "Triatlon"
+				(path "/d5286d43-c99d-4180-b950-0ade1916cf03"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4562,6 +4947,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 83.82 85.09 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3268488f-4b05-4015-87ee-57c7efe09405")
+		(property "Reference" "#PWR011"
+			(at 77.47 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 85.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bf1af09-8ae0-4198-ac19-388b90b0f445")
+		)
+		(instances
+			(project "Triatlon"
+				(path "/d5286d43-c99d-4180-b950-0ade1916cf03"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Linear:AMS1117-3.3")
 		(at 38.1 97.79 0)
 		(unit 1)
@@ -4640,7 +5092,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "32ce3368-65ed-4d1c-9150-c763a11fda6c")
 		(property "Reference" "#PWR017"
 			(at 29.21 128.27 0)
@@ -4651,13 +5102,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 21.59 128.2699 90)
+		(property "Value" "7.4V"
+			(at 20.32 127.762 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5757,7 +6207,7 @@
 	)
 	(symbol
 		(lib_id "EESTN5:ESP32_DEVKITC")
-		(at 100.33 77.47 0)
+		(at 100.33 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5782,7 +6232,7 @@
 			)
 		)
 		(property "Footprint" "RamLib:esp32 38 pin usb-c"
-			(at 92.71 102.87 0)
+			(at 107.95 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5791,7 +6241,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 102.87 0)
+			(at 107.95 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6604,17 +7054,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 81.28 100.33 0)
+		(lib_id "power:GND")
+		(at 119.38 67.31 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b52d13ff-0a96-465f-af5e-2de190d51cd9")
-		(property "Reference" "#PWR012"
-			(at 81.28 104.14 0)
+		(uuid "b4207bad-6978-4ad6-9939-e45eb0137cc2")
+		(property "Reference" "#PWR036"
+			(at 119.38 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6622,8 +7072,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 81.28 95.25 0)
+		(property "Value" "GND"
+			(at 119.38 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6631,7 +7081,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 100.33 0)
+			(at 119.38 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6640,7 +7090,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 100.33 0)
+			(at 119.38 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6648,8 +7098,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 81.28 100.33 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 119.38 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6658,12 +7108,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6fe6b640-5e74-4af7-87d4-b2ba27c7a60a")
+			(uuid "b28464b3-75b5-42c7-9d92-ec1ce353ee59")
 		)
 		(instances
 			(project "Triatlon"
 				(path "/d5286d43-c99d-4180-b950-0ade1916cf03"
-					(reference "#PWR012")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -7212,72 +7662,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 76.2 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc1d43e1-8778-43e3-a5f3-1a45e9813076")
-		(property "Reference" "#PWR011"
-			(at 76.2 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 76.2 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d3c8d5ad-cf75-4176-a218-7495d6f206df")
-		)
-		(instances
-			(project "Triatlon"
-				(path "/d5286d43-c99d-4180-b950-0ade1916cf03"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 40.64 54.61 180)
 		(unit 1)
@@ -7343,6 +7727,72 @@
 			(project "Triatlon"
 				(path "/d5286d43-c99d-4180-b950-0ade1916cf03"
 					(reference "SHARP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 118.11 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1673cab-f1b0-4b82-addd-01f0044f4c88")
+		(property "Reference" "#PWR037"
+			(at 118.11 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 118.11 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 118.11 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "884f7591-b9cc-41c5-bff2-acc8893c126d")
+		)
+		(instances
+			(project "Triatlon"
+				(path "/d5286d43-c99d-4180-b950-0ade1916cf03"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -7546,6 +7996,92 @@
 			(project "Triatlon"
 				(path "/d5286d43-c99d-4180-b950-0ade1916cf03"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148WT")
+		(at 123.19 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e94cead8-4239-4076-a877-9c6df432a242")
+		(property "Reference" "D1"
+			(at 123.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148WT"
+			(at 123.19 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 123.19 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+			(at 123.19 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
+			(at 123.19 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 123.19 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe1b75c1-9097-42b0-a220-19fee36c9d94")
+		)
+		(pin "2"
+			(uuid "13281aa6-afb1-4247-afa6-09bff23793cc")
+		)
+		(instances
+			(project ""
+				(path "/d5286d43-c99d-4180-b950-0ade1916cf03"
+					(reference "D1")
 					(unit 1)
 				)
 			)
